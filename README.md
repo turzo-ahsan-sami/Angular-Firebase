@@ -2,7 +2,13 @@
 
 This project was submitted as part of recruitment process. For registration/login and data storage Firebase was used.
 
+## Deployed on 
 
+https://turzo-todo.web.app/#/login
+
+## Recommended login 
+
+google account
 
 ## Development server
 

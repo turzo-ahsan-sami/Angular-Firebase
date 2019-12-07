@@ -3,13 +3,11 @@ import { Router } from "@angular/router";
 import { AuthService } from "./../../shared/auth.service";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
+  selector: 'app-user-profile',
+  templateUrl: './user-profile.component.html',
   styles: []
 })
-export class HomeComponent implements OnInit {
-
-  selectedMenu: string = "home";
+export class UserProfileComponent implements OnInit {
 
   constructor(
     public authService: AuthService,
@@ -17,9 +15,7 @@ export class HomeComponent implements OnInit {
     public ngZone: NgZone
   ) { }
 
-
   ngOnInit() {
-    this.selectedMenu = "home;"
   }
 
 }

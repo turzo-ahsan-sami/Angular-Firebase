@@ -1,31 +1,41 @@
-<div class="jubmotron" style="padding: 50px 0px">
-    <h4 class="text-center">To Do List</h4>
+<div class="pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">To Do List</h1>
 </div>
 
 
-<div class="input-group">
 
-    <input type="text" class="fomr-control" #itemTitle>
-    <div class="input-group-addon hover-cursor" (click)="onAdd(itemTitle)">
-        <i class="fa fa-plus-circle fa-2x"></i>
+
+<div class="row">
+    <div class="col-md-12">
+        
+        <div class="input-group">
+        
+            <input type="text" class="fomr-control" #itemTitle>
+            <div class="input-group-addon hover-cursor" (click)="onAdd(itemTitle)">
+                <i class="fa fa-plus-circle fa-2x"></i>
+            </div>
+        
+        </div>
+        
+        <div style="margin: 5px 0px">
+        
+            <ul class="list-group">
+                <ng-container *ngFor="let item of toDoListArray">
+                    <li class="list-group-item">
+                        <span class="hover-cursor" [class.text-success]="item?.isChecked" (click)="onChangeTitleState(item)">
+                            <i class="fa fa-lg" [ngClass]="item?.isChecked ? 'fa-check-circle-o' : 'fa-circle-thin'"></i>
+                        </span>
+                        <span style="padding-left: 5px;">{{item?.title}}</span>
+                        <span class="hover-cursor text-danger pull-right" (click)="onDelete(item.$key)">
+                            <i class="fa fa-trash-o fa-lg"></i>
+                        </span>
+                    </li>
+                </ng-container>
+            </ul>
+        
+        </div>
+        
     </div>
-
 </div>
 
-<div style="margin: 5px 0px">
 
-    <ul class="list-group">
-        <ng-container *ngFor="let item of toDoListArray">
-            <li class="list-group-item">
-                <span class="hover-cursor" [class.text-success]="item?.isChecked" (click)="onChangeTitleState(item)">
-                    <i class="fa fa-lg" [ngClass]="item?.isChecked ? 'fa-check-circle-o' : 'fa-circle-thin'"></i>
-                </span>
-                <span style="padding-left: 5px;">{{item?.title}}</span>
-                <span class="hover-cursor text-danger pull-right" (click)="onDelete(item.$key)">
-                    <i class="fa fa-trash-o fa-lg"></i>
-                </span>
-            </li>
-        </ng-container>
-    </ul>
-
-</div>

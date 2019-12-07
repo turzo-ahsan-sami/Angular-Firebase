@@ -1,10 +1,11 @@
 {
   "name": "todolist",
   "version": "0.0.0",
+  "author": "turzo ahsan sami",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "ng serve --port=9090 --open",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

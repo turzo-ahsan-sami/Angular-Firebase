@@ -86,6 +86,11 @@ export class AuthService {
   GoogleAuth() {
     return this.AuthLogin(new auth.GoogleAuthProvider());
   }
+  
+  // Sign in with Facebook
+  FacebookAuth() {
+    // return this.AuthLogin(new auth.GoogleAuthProvider());
+  }
 
   // Auth logic to run auth providers
   AuthLogin(provider) {

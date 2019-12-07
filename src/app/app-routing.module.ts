@@ -7,10 +7,10 @@ import { SecureInnerPagesGuard } from "./shared/guard/secure-inner-pages.guard";
 import { HomeComponent } from './components/home/home.component';
 import { TodoComponent } from './components/todo/todo.component';
 
-import { LoginComponent } from './admin/login/login.component';
-import { SignupComponent } from './admin/signup/signup.component';
-import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './admin/verify-email/verify-email.component';
+import { LoginComponent } from './public/login/login.component';
+import { SignupComponent } from './public/signup/signup.component';
+import { ForgotPasswordComponent } from './public/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './public/verify-email/verify-email.component';
 
 
 const APP_ROUTES: Routes = [

@@ -19,10 +19,10 @@ import { TodoService } from './shared/todo.service';
 import { AuthService } from './shared/auth.service';
 
 import { HomeComponent } from './components/home/home.component';
-import { LoginComponent } from './admin/login/login.component';
-import { SignupComponent } from './admin/signup/signup.component';
-import { ForgotPasswordComponent } from './admin/forgot-password/forgot-password.component';
-import { VerifyEmailComponent } from './admin/verify-email/verify-email.component';
+import { LoginComponent } from './public/login/login.component';
+import { SignupComponent } from './public/signup/signup.component';
+import { ForgotPasswordComponent } from './public/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './public/verify-email/verify-email.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 
 @NgModule({
